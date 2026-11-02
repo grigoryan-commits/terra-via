@@ -1,0 +1,34 @@
+.account { padding: 48px 0 80px; }
+.account-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; }
+.account-head h1 { margin-bottom: 4px; }
+.account-actions { display: flex; gap: 10px; }
+.account-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+.account-stats div { background: var(--sand-2); border-radius: var(--radius); padding: 22px; }
+.account-stats strong { display: block; font-family: var(--font-head); font-size: 28px; color: var(--teal); }
+.account-stats span { color: var(--muted); font-size: 14px; }
+.account h2 { margin-top: 32px; }
+.bookings { display: flex; flex-direction: column; gap: 18px; }
+.booking { display: grid; grid-template-columns: 220px 1fr; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.booking img { width: 100%; height: 100%; object-fit: cover; min-height: 170px; background: var(--sand); }
+.booking-body { padding: 20px 24px; }
+.booking-top { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
+.booking h3 { margin: 6px 0 4px; }
+.booking h3 a { color: var(--ink); text-decoration: none; }
+.booking-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.booking-foot strong { font-family: var(--font-head); font-size: 22px; color: var(--teal); }
+.booking-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.status { padding: 4px 12px; border-radius: 999px; font-weight: 700; font-size: 12px; }
+.status-new { background: #fff3d6; color: #8a5d00; }
+.status-confirmed { background: #e2ecfb; color: #234d9a; }
+.status-paid { background: #e2f3ea; color: #1e6b45; }
+.status-cancelled { background: #eeeeee; color: #6b6b6b; }
+.hint { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+.pay-box { display: flex; align-items: center; gap: 10px; margin-top: 14px; padding: 14px; background: var(--sand-2); border-radius: 12px; flex-wrap: wrap; }
+.review-form { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.rating-pick button { border: 0; background: none; font-size: 28px; color: #d9d2c3; cursor: pointer; padding: 0 2px; }
+.rating-pick button.on { color: #e9b23c; }
+@media (max-width: 700px) {
+  .booking { grid-template-columns: 1fr; }
+  .account-stats { grid-template-columns: 1fr; }
+  .account-head { flex-direction: column; align-items: start; }
+}

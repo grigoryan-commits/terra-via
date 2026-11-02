@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /terravia/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_URI} !^/terravia/api/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /terravia/index.html [L]
